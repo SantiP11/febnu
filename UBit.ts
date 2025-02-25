@@ -4,6 +4,7 @@
 * Lea más en https://makecode.microbit.org/blocks/custom
 */
 
+
 enum MyEnum {
     //% block="one"
     One,
@@ -16,23 +17,21 @@ enum MyEnum {
  */
 //% weight=100 color=#0fbc11 icon=""
 namespace Ubit {
+
     /**
-     * TODO: describe your function here
-     * @param n describe parameter here, eg: 5
-     * @param s describe parameter here, eg: "Hello"
-     * @param e describe parameter here
-     */
-    //% block
-    export function foo(n: number, s: string, e: MyEnum): void {
-        // Add code here
+    * This is a block to reproduce a certain text through audio
+    */
+    //% block="Reproducir $steps por audio"
+    export function move(steps: string) {
+
     }
 
     /**
-     * TODO: describe your function here
-     * @param value describe value here, eg: 5
+     * This is a block to enable/disable symbol reading
      */
-    //% block
-    export function fib(value: number): number {
-        return value <= 1 ? value : fib(value -1) + fib(value - 2);
+    //% block= "Reproducir iconos $yes"
+    //% yes.shadow="toggleOnOff"
+    export function icon(yes: boolean){
+
     }
 }
